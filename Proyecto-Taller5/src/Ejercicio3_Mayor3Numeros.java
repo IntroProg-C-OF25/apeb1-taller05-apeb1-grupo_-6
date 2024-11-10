@@ -9,13 +9,13 @@ import java.util.Scanner;
 public class Ejercicio3_Mayor3Numeros {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        double n1, n2, n3;
-        System.out.println("Dame el valor del primer número ");
-        n1 = teclado.nextDouble();
-        System.out.println("Dame el valor del segundo número ");
-        n2 = teclado.nextDouble();
-        System.out.println("Dame el valor del tercer número ");
-        n3 = teclado.nextDouble();
+        int n1, n2, n3;
+        System.out.println("Dame el valor del primer número: ");
+        n1 = teclado.nextInt();
+        System.out.println("Dame el valor del segundo número: ");
+        n2 = teclado.nextInt();
+        System.out.println("Dame el valor del tercer número: ");
+        n3 = teclado.nextInt();
         if (n1>n2 && n1>n3){
             System.out.println("El número de mayor valor es: " + n1 );
         } else if (n2 > n1 && n2 > n3) {
@@ -27,3 +27,13 @@ public class Ejercicio3_Mayor3Numeros {
         }  
     }
 }
+/***
+ * run:
+ * Dame el valor del primer número: 
+ * 3
+ * Dame el valor del segundo número: 
+ * 6
+ * Dame el valor del tercer número: 
+ * 9
+ * El número de mayor valor es: 9
+ */
